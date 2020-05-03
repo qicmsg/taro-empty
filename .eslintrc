@@ -1,0 +1,24 @@
+{
+  "extends": ["taro"],
+  "rules": {
+    "no-unused-vars": [0, { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "quotes": [0, "single"],//引号类型 `` "" ''
+    "quote-props":[0, "always"],//对象字面量中的属性名是否强制双引号
+    "jsx-quotes": [0, "prefer-double"],
+    "react/jsx-closing-bracket-location": 0,
+    "react/jsx-indent-props": 0,
+    "react/no-string-refs": 0,
+    "react/jsx-tag-spacing": 0,
+    "no-undef": 0
+    //"no-unused-vars": 0
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}
